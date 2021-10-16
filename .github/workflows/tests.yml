@@ -1,0 +1,19 @@
+name: Tests & Linting
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: Install packages
+        run: yarn install
+      - name: Run linting
+        run: yarn lint
+      - name: Run tests
+        run: yarn test
