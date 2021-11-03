@@ -2,8 +2,10 @@
   "name": "bandi-events",
   "version": "0.1.0",
   "description": "Create rewards from webmonetization events",
-  "source": "src/index.js",
+  "source": "src/index.ts",
   "main": "dist/index.js",
+  "module": "dist/index.modern.module.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bandi-Events/bandi-events.git"
