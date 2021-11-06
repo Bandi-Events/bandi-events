@@ -1,5 +1,5 @@
 {
-  "name": "bandi-events",
+  "name": "@bandi/bandi-events",
   "version": "0.1.0",
   "description": "Create rewards from webmonetization events",
   "source": "src/index.ts",
